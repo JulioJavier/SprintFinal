@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprint Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="headpage d-inline-block d-flex justify-content-center text-white">
+        <div class="headpage_child-text d-flex justify-content-center w-">
+            <p class="p-1">Welcome to FastKart! Wrap new offers/gift every signle day on Weekends.</p>
+            <p id="Ncupon" class="p-1 " style="font-weight: 700;">New Coupon Code: Fast024</p>
+        </div>
+        <div class="headpage_child d-flex justify-content-center w-25">
+            <div class="dropdown">
+                <button class="text-white btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img style="width: 20px; height: 15px;"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png">
+                    English
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="text-white btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    USD
+                </button>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">COP</button></li>
+                    <li><button class="dropdown-item" type="button">EUR</button></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <nav class="navbar bg-light w-75 mx-auto">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="navbar-brand text-white" href="./index.html">
+                <img src="https://www.kaporan.com/assets/images/logo/logo.png" alt="Logo" width="150px" height="24"
+                    class="d-inline-block align-text-top">
+            </a>
+            <form id="search" class="d-flex w-50" role="search">
+                <!-- <input 
+                id="searchInput" 
+                class="searchInput form-control me-1 "
+                type="text"
+                placeholder=" Buscar por categoria" 
+                autocomplete="off" 
+            /> -->
+                <input id="searchInput" class="searchInput form-control me-1 " type="input"
+                    placeholder="Buscar por categoria" aria-label="Search">
+                <button id="btnSearch" class="btnSearch btn text-white bg-warning" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+            </form>
+            <div>
+                <!-- boton telefono -->
+                <button style=" color: black;" type="button"
+                    class="btn btn-light border border-top-0 border-bottom-0 border-start-0"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path
+                            d="M16.57 22a2 2 0 0 0 1.43-.59l2.71-2.71a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0l-1.6 1.59a7.55 7.55 0 0 1-3-1.59 7.62 7.62 0 0 1-1.59-3l1.59-1.6a1 1 0 0 0 0-1.41l-4-4a1 1 0 0 0-1.41 0L2.59 6A2 2 0 0 0 2 7.43 15.28 15.28 0 0 0 6.3 17.7 15.28 15.28 0 0 0 16.57 22zM6 5.41 8.59 8 7.3 9.29a1 1 0 0 0-.3.91 10.12 10.12 0 0 0 2.3 4.5 10.08 10.08 0 0 0 4.5 2.3 1 1 0 0 0 .91-.27L16 15.41 18.59 18l-2 2a13.28 13.28 0 0 1-8.87-3.71A13.28 13.28 0 0 1 4 7.41zM20 11h2a8.81 8.81 0 0 0-9-9v2a6.77 6.77 0 0 1 7 7z">
+                        </path>
+                        <path d="M13 8c2.1 0 3 .9 3 3h2c0-3.22-1.78-5-5-5z"></path>
+                    </svg></button>
+                <!-- boton favorito -->
+                <button onclick="mostrarFavoritos()" style=" color: black;" type="button" id="btnCarrito"
+                    data-bs-toggle="modal" data-bs-target="#favoritoModal"
+                    class="btn btn-light border border-top-0 border-bottom-0 border-start-0"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path
+                            d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z">
+                        </path>
+                    </svg></button>
+                <!-- boton carrito -->
+                <button onmouseover="click(), mostrarCarrito()" type="button" id="btnCarrito" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    class="btn btn-light position-relative border border-top-0 border-bottom-0 border-start-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path
+                            d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z">
+                        </path>
+                        <circle cx="10.5" cy="19.5" r="1.5"></circle>
+                        <circle cx="17.5" cy="19.5" r="1.5"></circle>
+                    </svg>
+                    <span id="cantProductCart"
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+                <!-- boton user -->
+                <button id="btnUser" style=" color: black;" type="button" class="btn btn-light border border-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        style="fill: rgba(0, 0, 0, 1);">
+                        <path
+                            d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal Carrito-->
+
+    <div class="modal fade flex-wrap" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog  w-75 mx-auto  ">
+            <div class="modal-content d-flex flex-wrap justify-content-center ">
+                <div class="modal-header d-flex gap-3 flex-wrap">
+                    <img src="https://www.kaporan.com/assets/images/logo/logo.png" alt="Logo" width="80px" height="18"
+                        class="d-inline-block align-text-top" onmouseout="click()">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mi Carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modal-body" class="modal-body d-flex  flex-column gap-3">
+
+                </div>
+                <!-- 
+                    <div class="d-flex justify-content-around flex-wrap h-50">
+                        <p>Precio: </p>
+                        <span id="precioTotal" class="d-flex justify-content-center w-25 text-warning bg-secondary rounded-pill"></span>
+                    </div> -->
+                <div class="modal-footer d-flex justify-content-around flex-wrap">
+                    <button onclick="vaciarElCarrito()" id="vaciarCarrito" type="button" class=" btn btn-outline-danger"
+                        data-bs-dismiss="modal">Vaciar Carrito</button>
+                    <span id="precioTotal"
+                        class="d-flex justify-content-center w-25 text-warning bg-secondary rounded-pill"></span>
+                    <button id="verCarrito" type="button" data-bs-toggle="modal" data-bs-target="#ProcessToCheckout"
+                        class="btn btn-success text-white ">Ir Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Favoritos -->
+    <div class="modal fade flex-wrap" id="favoritoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog  w-75 mx-auto  ">
+            <div class="modal-content d-flex flex-wrap justify-content-center ">
+                <div class="modal-header d-flex gap-3 flex-wrap">
+                    <img src="https://www.kaporan.com/assets/images/logo/logo.png" alt="Logo" width="80px" height="18"
+                        class="d-inline-block align-text-top" onmouseout="click()">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Favoritos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-favorito d-flex  flex-column gap-3">
+
+                </div>
+                <div class="modal-footer d-flex justify-content-around flex-wrap">
+                    <button onclick="vaciarFavorito()" id="vaciarFavoritos" type="button"
+                        class=" btn btn-outline-danger" data-bs-dismiss="modal">Vaciar Favoritos</button>
+                    <button id="verFavorito" type="button" class="btn btn-success text-white ">Ver Favoritos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ProcessToCheckout-->
+
+    <div class="modal fade flex-wrap" id="ProcessToCheckout" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog  w-75 mx-auto  ">
+            <div class="modal-content d-flex flex-wrap justify-content-center ">
+                <div class="modal-header d-flex gap-3 flex-wrap">
+                    <img src="https://www.kaporan.com/assets/images/logo/logo.png" alt="Logo" width="80px" height="18"
+                        class="d-inline-block align-text-top" onmouseout="click()">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Proceso de pago</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="Modal-ProcessToCheckout" class="modal-body d-flex  flex-column gap-3">
+                    <form id="formPago" class="row g-3">
+                        <div class="col-md-4">
+                          <label for="validationDefault01" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="validationDefault01 inputNombre"  required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefault02" class="form-label">Apellidos</label>
+                          <input type="text" class="form-control" id="validationDefault02 inputApellido"  required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefaultUsername" class="form-label">Email</label>
+                          <div class="input-group">
+                            <input type="email" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                        <div class="col-md-5">
+                          <label for="validationDefault03" class="form-label">Dirección</label>
+                          <input type="text" class="form-control" id="validationDefault03" required>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="validationDefault05" class="form-label">Ciudad</label>
+                          <input type="text" class="form-control" id="validationDefault04" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="validationDefault05" class="form-label">Telefono</label>
+                          <input type="text" class="form-control" id="validationDefault05" required>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Aceptar los términos y condiciones.
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button id="submitCompra" class="btn btn-success" type="submit">Comprar Ahora</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex img-fluid w-75 p-1 gap-1  mx-auto">
+        <img class="img-fluid w-75" src="https://images.pexels.com/photos/3850674/pexels-photo-3850674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <div class="flex-column  w-25">
+            <img class="img-fluid w-100 p-1" src="https://images.pexels.com/photos/3987224/pexels-photo-3987224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="img-fluid w-100 p-1" src="https://images.pexels.com/photos/5910953/pexels-photo-5910953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+    </div>
+    <div class="d-flex justify-content-around img-fluid w-75 gap-1 mx-auto">
+
+            <img class="img-fluid w-25 p-1" src="https://images.pexels.com/photos/3683101/pexels-photo-3683101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="img-fluid w-25 p-1" src="https://images.pexels.com/photos/6621364/pexels-photo-6621364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="img-fluid w-25 p-1" src="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img class="img-fluid w-25 p-1" src="https://images.pexels.com/photos/932577/pexels-photo-932577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    </div>
+    <div id="container" class="container-xxl d-flex justify-content-center w-75 mx-auto m-2">
+        
+        <ul id="categorias" class="nav flex-column bg-light w-25% p-2">
+            <li class="nav-item">
+                <h1>Categorias</h1>
+                <hr>
+            </li>
+            <li class="nav-item">
+                <input onclick="busqueda('Cuidado Personal')" id="ctgCuidaPerso" type="button"
+                    class="btn btn-light border border-white w-100" value="Cuidado Personal">
+                <hr>
+            </li>
+            <li class="nav-item">
+                <input onclick="busqueda('Perfumes')" id="ctgPerfumes" type="button"
+                    class="btn btn-light border border-white w-100" value="Perfumes">
+                <hr>
+            </li>
+            <li class="nav-item">
+                <input onclick="busqueda('Farmacia')" id="ctgFarmacia" type="button"
+                    class="btn btn-light border border-white w-100" value="Farmacia">
+                <hr>
+            </li>
+
+        </ul>
+        <main style="width: 100%" ; class="containerCards justify-content-center d-flex flex-wrap gap-3"
+            id="containerCards">
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="./script/main.js"></script>
+</body>
+
+</html>

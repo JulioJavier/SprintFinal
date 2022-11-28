@@ -1,0 +1,204 @@
+{
+  "compra": [
+    {
+      "1": {
+        "cantidad": 1,
+        "precio": "10000",
+        "nombre": "Anian Champú para niños con camomila",
+        "image": " https://www.micashandcarry.com/1944-medium_default/anian-champu-para-ninos-camomila.jpg"
+      },
+      "2": {
+        "cantidad": 1,
+        "precio": "15000",
+        "nombre": "Anian Gel de baño Moussant ",
+        "image": " https://www.micashandcarry.com/1937-medium_default/anian-gel-de-bano-moussant.jpg"
+      },
+      "3": {
+        "cantidad": 1,
+        "precio": "6000",
+        "nombre": "Agrado Mascarilla Pro Nutrición cabellos secos y quebradizos ",
+        "image": " https://www.micashandcarry.com/1368-medium_default/agrado-mascarilla-pro-nutricion.jpg"
+      },
+      "4": {
+        "cantidad": 1,
+        "precio": "9000",
+        "nombre": "Gillette Venus Blue II Plus cuchillas desechables mujer ",
+        "image": " https://www.micashandcarry.com/1162-medium_default/cuchillas-gillette-mujer.jpg"
+      },
+      "5": {
+        "cantidad": 1,
+        "precio": "45000",
+        "nombre": "Gel hidroalcohólico para manos Lavanda 500 ml. ",
+        "image": " https://www.micashandcarry.com/1725-medium_default/hidroalcoholico-lavanda.jpg"
+      },
+      "6": {
+        "cantidad": 1,
+        "precio": "20000",
+        "nombre": "Agrado colonia Gotas frescas ",
+        "image": " https://www.micashandcarry.com/1372-medium_default/xagrado-colonia-gotas-frescas.jpg.pagespeed.ic.fS5UWfJ4Mp.webp"
+      },
+      "id": 1
+    },
+    {
+      "2": {
+        "cantidad": 1,
+        "precio": "15000",
+        "nombre": "Anian Gel de baño Moussant ",
+        "image": " https://www.micashandcarry.com/1937-medium_default/anian-gel-de-bano-moussant.jpg"
+      },
+      "3": {
+        "cantidad": 1,
+        "precio": "6000",
+        "nombre": "Agrado Mascarilla Pro Nutrición cabellos secos y quebradizos ",
+        "image": " https://www.micashandcarry.com/1368-medium_default/agrado-mascarilla-pro-nutricion.jpg"
+      },
+      "id": 2
+    },
+    {
+      "14": {
+        "cantidad": 1,
+        "precio": "5000",
+        "nombre": "Cuidaplus Povidona Iodada 10% ",
+        "image": " https://www.micashandcarry.com/1004-medium_default/povidona-iodo.jpg"
+      },
+      "id": 3
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Anian Champú para niños con camomila",
+      "contenido": "250ml",
+      "precio": "20000",
+      "categoria": "cuidado personal",
+      "stock": "50",
+      "image": "https://www.micashandcarry.com/1944-medium_default/anian-champu-para-ninos-camomila.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Anian Gel de baño Moussant ",
+      "contenido": "750ml",
+      "precio": 15000,
+      "categoria": "cuidado personal",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1937-medium_default/anian-gel-de-bano-moussant.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Agrado Mascarilla Pro Nutrición cabellos secos y quebradizos ",
+      "contenido": "200ml",
+      "precio": 6000,
+      "categoria": "cuidado personal",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1368-medium_default/agrado-mascarilla-pro-nutricion.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Gillette Venus Blue II Plus cuchillas desechables mujer ",
+      "contenido": "5+1 ud",
+      "precio": 9000,
+      "categoria": "cuidado personal",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1162-medium_default/cuchillas-gillette-mujer.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Gel hidroalcohólico para manos Lavanda 500 ml. ",
+      "contenido": "Caja 5 uds",
+      "precio": 45000,
+      "categoria": "cuidado personal",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1725-medium_default/hidroalcoholico-lavanda.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Agrado colonia Gotas frescas ",
+      "contenido": "1000 ml",
+      "precio": 20000,
+      "categoria": "perfumes",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1372-medium_default/xagrado-colonia-gotas-frescas.jpg.pagespeed.ic.fS5UWfJ4Mp.webp"
+    },
+    {
+      "id": 7,
+      "nombre": "Dicora Urban Fit Box Moscow Edt 100ml + sport bottle ",
+      "contenido": "500ml",
+      "precio": 40000,
+      "categoria": "perfumes",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1047-medium_default/box-moscow.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Dicora Urban Fit Box Tokyo Edt 100ml + sport bottle ",
+      "contenido": "500ml",
+      "precio": 40000,
+      "categoria": "perfumes",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1054-medium_default/box-tokyo.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Colonia Dicora Urban Fit Río para mujer ",
+      "contenido": "100ml",
+      "precio": 28000,
+      "categoria": "perfumes",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/698-medium_default/colonia-rio.jpg"
+    },
+    {
+      "id": 10,
+      "nombre": "Dolores promesas Heaven perfume ",
+      "contenido": "100ml",
+      "precio": 28000,
+      "categoria": "perfumes",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1383-medium_default/dolores-promesas-heaven-perfume.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Algodón hidrófilo en zig zag paquete de ",
+      "contenido": "100 gr",
+      "precio": 3000,
+      "categoria": "farmacia",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/993-medium_default/algodon-hidrofilo.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Prevex Esparadrapo transparente ",
+      "contenido": "5 Metros",
+      "precio": 4600,
+      "categoria": "farmacia",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/983-medium_default/esparadrapo-transparente.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Bastoncillos de algodón biodegradables. ",
+      "contenido": "Caja 24 uds",
+      "precio": 39500,
+      "categoria": "farmacia",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1756-medium_default/bastoncillos-oidos.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Cuidaplus Povidona Iodada 10% ",
+      "contenido": "125ml",
+      "precio": 5000,
+      "categoria": "farmacia",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/1004-medium_default/povidona-iodo.jpg"
+    },
+    {
+      "id": 15,
+      "nombre": "Tiritas adhesivas infantiles con desinfectante. Paquete de ",
+      "contenido": "20 uds",
+      "precio": 3900,
+      "categoria": "farmacia",
+      "stock": "100",
+      "image": "https://www.micashandcarry.com/990-medium_default/tiritas-infantiles-desinfectante.jpg"
+    }
+  ]
+}
